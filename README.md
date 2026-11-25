@@ -21,20 +21,25 @@
 pip install -r requirements.txt
 ```
 
-(PyQt5 нужен только для задания №9 повышенной сложности)
+Tkinter входит в стандартную библиотеку Python.  
+PyQt5 нужен только для задания №9 повышенной сложности.
 
 ## Запуск
 
-```bash
-# Все примеры (меню выбора)
-python -m lab5
+Меню со всеми заданиями:
 
-# По отдельности
-python -m lab5.hello_button
-python -m lab5.progress_bar
-python -m lab5.color_panel
-python -m lab5.draw_shapes
-python -m lab5.pyqt_table
+```bash
+python -m lab5
+```
+
+По отдельности:
+
+```bash
+python -m lab5.hello_button      # №1
+python -m lab5.progress_bar      # №6
+python -m lab5.color_panel       # №9
+python -m lab5.draw_shapes       # №2↑
+python -m lab5.pyqt_table        # №9↑
 ```
 
 ## Структура
@@ -43,9 +48,19 @@ python -m lab5.pyqt_table
 lab5/
 ├── __init__.py
 ├── __main__.py          # меню запуска
-├── hello_button.py      # №1
-├── progress_bar.py      # №6
-├── color_panel.py       # №9
-├── draw_shapes.py       # №2 (повышенная)
-└── pyqt_table.py        # №9 (повышенная)
+├── hello_button.py      # №1 — кнопка «Привет»
+├── progress_bar.py      # №6 — прогрессбар
+├── color_panel.py       # №9 — цветная панель
+├── draw_shapes.py       # №2↑ — рисование мышью
+└── pyqt_table.py        # №9↑ — таблица на PyQt5
 ```
+
+## Кратко по заданиям
+
+| № | Что делает |
+|---|------------|
+| 1 | Окно + кнопка, по нажатию — «Привет!» |
+| 6 | Прогрессбар 0→100% с кнопками Старт/Сброс |
+| 9 | Панель меняет цвет по кнопке |
+| 2↑ | Canvas: линии, прямоугольники, овалы мышью |
+| 9↑ | PyQt5: таблица студентов, добавить/удалить строки |
